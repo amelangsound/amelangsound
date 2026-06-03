@@ -90,7 +90,8 @@
   .gear-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
   .gear-card{border:1px dashed var(--line);border-radius:12px;padding:14px;background:rgba(255,255,255,.4)}
   .gear-img{width:100%;aspect-ratio:4/3;border-radius:8px;background:var(--paper-2);
-    display:flex;align-items:center;justify-content:center;color:var(--ink-faint);font-size:12px;margin-bottom:10px}
+    display:flex;align-items:center;justify-content:center;color:var(--ink-faint);font-size:12px;margin-bottom:10px;position:relative;overflow:hidden}
+  .gear-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff}
   .gear-card .name{font-family:"Fraunces",serif;font-weight:500;font-size:15px}
   .gear-card .sub{font-size:12px;color:var(--ink-faint);margin-top:2px}
   .todo{margin-top:24px;font-size:13px;color:var(--accent);border-left:2px solid var(--accent);padding-left:12px}
@@ -138,8 +139,8 @@
     </div>
 
     <p class="hook fx">
-      <span class="en">Clean, broadcast-ready production sound for <b>documentary, film and television</b> — across three continents, in three languages.</span>
-      <span class="es">Sonido directo limpio y listo para emisión en <b>documental, cine y televisión</b> — en tres continentes y tres idiomas.</span>
+      <span class="en">Clean, broadcast-ready production sound for <b>documentary, film and television</b> — fully equipped, in three languages.</span>
+      <span class="es">Sonido directo limpio y listo para emisión en <b>documental, cine y televisión</b> — equipo propio completo, en tres idiomas.</span>
     </p>
 
     <div class="cta-row fx">
@@ -181,8 +182,8 @@
       <div class="credit"><span class="t">Ocean X – Digital Impact Series</span><span class="m">NatGeo / BBC · D.R., 2021</span></div>
       <div class="credit"><span class="t">The Young Pilot</span><span class="m">Dir. Guillermo Navarro · D.R., 2021</span></div>
       <div class="credit"><span class="t">Natti Natasha Biopic</span><span class="m">Spotify · D.R., 2018</span></div>
-      <div class="credit"><span class="t">J.Lo Documentary</span><span class="m">Dir. Chris Lamb · PRG Productions · D.R., 2017</span></div>
-      <div class="credit"><span class="t">Por eso vengo al Río</span><span class="m">Syria · Turkey · Lebanon · Israel, 2017</span></div>
+      <div class="credit"><span class="t">J.Lo Documentary</span><span class="m">Dir. Chris Lamb · PRG Productions · local 2nd unit · D.R., 2017</span></div>
+      <div class="credit"><span class="t">Por eso vengo al Río</span><span class="m">Turkey · Lebanon · D.R., 2017</span></div>
 
       <div class="cat"><span class="en">Feature Films — Production Sound Mixer</span><span class="es">Largometrajes — Sonidista de Directo</span></div>
       <div class="credit"><span class="t">Butyto</span><span class="m">Dir. Félix Limardo · D.R., 2021</span></div>
@@ -195,12 +196,13 @@
       <div class="cat"><span class="en">Reality / Television / ENG</span><span class="es">Realities / Televisión / ENG</span></div>
       <div class="credit"><span class="t">Aquí la Tierra</span><span class="m">TVE España · D.R. &amp; España, 2024–2026</span></div>
       <div class="credit"><span class="t">The Trust</span><span class="m">Netflix USA · A2 · D.R., 2023</span></div>
-      <div class="credit"><span class="t">Back in the Groove</span><span class="m">Hulu · D.R., 2022</span></div>
+      <div class="credit"><span class="t">Back in the Groove</span><span class="m">Hulu · multiple units · D.R., 2022</span></div>
       <div class="credit"><span class="t">Slime Time Live</span><span class="m">Nickelodeon · D.R., 2022</span></div>
-      <div class="credit"><span class="t">The Family Chantel / 90 Day Fiancé</span><span class="m">TLC · D.R., 2021–2022</span></div>
-      <div class="credit"><span class="t">Blinded by the Lights</span><span class="m">HBO Poland · DR unit, 2017</span></div>
+      <div class="credit"><span class="t">The Family Chantel</span><span class="m">TLC · DR unit · 2021–2022</span></div>
+      <div class="credit"><span class="t">90 Day Fiancé</span><span class="m">TLC · DR unit · 2021–2022</span></div>
+      <div class="credit"><span class="t">Blinded by the Lights</span><span class="m">HBO Poland · DR unit, 1 episode · 2017</span></div>
       <div class="credit"><span class="t">WDR Production</span><span class="m">Production Sound Mixer · Cologne, Germany, 2023</span></div>
-      <div class="credit"><span class="t">German TV Productions</span><span class="m">SAT1 · RTL · ProSieben · TV Austria · Spain</span></div>
+      <div class="credit"><span class="t">German &amp; Austrian TV</span><span class="m">SAT1 · RTL · ProSieben · Mallorca, Spain · 2022</span></div>
 
       <div class="cat"><span class="en">Advertising &amp; Corporate</span><span class="es">Publicidad y Corporativo</span></div>
       <div class="credit"><span class="t">Valentino Fragrance Campaign (VO)</span><span class="m">Benzene Paris · Madrid, 2026</span></div>
@@ -216,15 +218,16 @@
 
   <section>
     <div class="sec-head"><span class="en">What I Bring to Set</span><span class="es">Lo Que Aporto al Rodaje</span></div>
-    <p class="equip-note"><span class="en">A full professional production sound kit I own and bring to set — available on request.</span><span class="es">Equipo profesional completo de sonido directo, de mi propiedad, que llevo al rodaje — disponible bajo petición.</span></p>
+    <p class="equip-note"><span class="en">A full professional production sound kit, owned and operated — available on request.</span><span class="es">Equipo profesional completo de sonido directo, en propiedad y operado por mí — disponible bajo petición.</span></p>
     <div class="gear-grid">
-      <div class="gear-card"><div class="gear-img">Photo</div><div class="name">Multitrack Recorder</div><div class="sub">model name</div></div>
-      <div class="gear-card"><div class="gear-img">Photo</div><div class="name">Shotgun Microphone</div><div class="sub">model name</div></div>
-      <div class="gear-card"><div class="gear-img">Photo</div><div class="name">Lavalier Mics</div><div class="sub">model name</div></div>
-      <div class="gear-card"><div class="gear-img">Photo</div><div class="name">Wireless Systems</div><div class="sub">model name</div></div>
-      <div class="gear-card"><div class="gear-img">Photo</div><div class="name">Monitoring</div><div class="sub">model name</div></div>
+      <div class="gear-card"><div class="gear-img"><img src="gear-recorder.jpeg" alt="Sound Devices MixPre-10 II" onerror="this.style.display='none'">Photo</div><div class="name"><span class="en">Field Recorder</span><span class="es">Grabador de Campo</span></div><div class="sub">Sound Devices MixPre-10 II</div></div>
+      <div class="gear-card"><div class="gear-img"><img src="gear-wireless.jpeg" alt="Lectrosonics wireless" onerror="this.style.display='none'">Photo</div><div class="name"><span class="en">Wireless Systems</span><span class="es">Sistemas Inalámbricos</span></div><div class="sub">Lectrosonics · 2× Dual SRb receivers, 2× SMQV + 2× SMV transmitters (4 channels) · LR receiver + HMa plug-on (wireless boom) · + Sennheiser G4</div></div>
+      <div class="gear-card"><div class="gear-img"><img src="gear-shotgun.jpeg" alt="Sennheiser MKH 416 / MKH 50" onerror="this.style.display='none'">Photo</div><div class="name"><span class="en">Shotgun Microphones</span><span class="es">Micrófonos de Cañón</span></div><div class="sub">Sennheiser MKH 416 · MKH 50</div></div>
+      <div class="gear-card"><div class="gear-img"><img src="gear-lav.jpeg" alt="Sanken COS-11D" onerror="this.style.display='none'">Photo</div><div class="name"><span class="en">Lavalier Microphones</span><span class="es">Micrófonos de Solapa</span></div><div class="sub">Sanken COS-11D ×4</div></div>
+      <div class="gear-card"><div class="gear-img"><img src="gear-ifb.jpeg" alt="Comtek M-216" onerror="this.style.display='none'">Photo</div><div class="name">IFB</div><div class="sub">Comtek M-216 · 3× PR-216</div></div>
+      <div class="gear-card"><div class="gear-img"><img src="gear-antenna.jpeg" alt="Antennas" onerror="this.style.display='none'">Photo</div><div class="name"><span class="en">Antennas</span><span class="es">Antenas</span></div><div class="sub"><span class="en">whips · Betso bowtie · PSC shark-fin</span><span class="es">látigos · pajarita Betso · shark-fin PSC</span></div></div>
     </div>
-    <p class="todo"><span class="en">↑ Placeholder — send your exact gear (models + official photos) and I'll fill this in.</span><span class="es">↑ Provisional — envíame tu equipo exacto (modelos + fotos oficiales) y lo completo.</span></p>
+    <p style="margin-top:22px;font-size:13.5px;color:var(--ink-faint)"><span class="en">Plus boom poles (K-Tek &amp; Ambient), Rycote windshields, and the usual on-set accessories.</span><span class="es">Además: jirafas (K-Tek y Ambient), zeppelines Rycote y los accesorios habituales de rodaje.</span></p>
   </section>
 
   <section>
